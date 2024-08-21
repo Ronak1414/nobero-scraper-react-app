@@ -1,0 +1,149 @@
+/* General Styles */
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  color: #f39c12; /* Bright color for contrast */
+  font-size: 2.5em;
+  margin: 20px;
+  font-weight: 700;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Product List Styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Product Card Styles */
+.product-card {
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  background-color: #222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  animation: cardFadeIn 1s ease-in;
+  color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 1.75em;
+  margin-bottom: 15px;
+  color: #f39c12;
+  font-weight: 600;
+}
+
+/* Product Details */
+.product-price,
+.product-mrp,
+.product-sale,
+.product-fit,
+.product-fabric,
+.product-neck,
+.product-sleeve,
+.product-pattern,
+.product-length,
+.product-description {
+  margin-bottom: 12px;
+  font-size: 1em;
+}
+
+.product-price {
+  color: #2ecc71;
+  font-weight: 500;
+}
+
+.product-mrp {
+  text-decoration: line-through;
+  color: #e74c3c;
+  font-weight: 400;
+}
+
+.product-sale {
+  color: #e67e22;
+  font-weight: 500;
+}
+
+.product-fit,
+.product-fabric,
+.product-neck,
+.product-sleeve,
+.product-pattern,
+.product-length {
+  color: #bdc3c7;
+}
+
+.product-description {
+  color: #95a5a6;
+  font-size: 0.95em;
+}
+
+/* Product Link */
+.product-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #3498db;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.product-link:hover {
+  color: #2980b9;
+  border-bottom: 1px solid #2980b9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Product 1",
+        "price": 199.99,
+        "mrp": 249.99,
+        "last_7_day_sale": "10% off",
+        "fit": "Regular",
+        "fabric": "Cotton",
+        "neck": "Round Neck",
+        "sleeve": "Short Sleeve",
+        "pattern": "Solid",
+        "length": "Regular",
+        "description": "A comfortable and stylish t-shirt."
+    }
+]
