@@ -3,22 +3,6 @@ import './App.css'; // Import your CSS file for styling
 
 function App() {
   // Manually defined product data
-  const products = [
-    {
-      title: 'Product 1',
-      price: 199.99,
-      mrp: 249.99,
-      last_7_day_sale: '10% off',
-      fit: 'Regular',
-      fabric: 'Cotton',
-      neck: 'Round Neck',
-      sleeve: 'Short Sleeve',
-      pattern: 'Solid',
-      length: 'Regular',
-      description: 'A comfortable and stylish t-shirt.',
-      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST4XrcpfJC1omvBC_VXaGIIYA9U_1v0YU-Bw&s', // Replace with your image URL
-    }
-  ];
 
   return (
     <div className="App">
